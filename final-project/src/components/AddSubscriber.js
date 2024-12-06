@@ -41,7 +41,7 @@ export default function AddSubscriber({addSubscriber}) {
         event.preventDefault();
 
         if(validate()){
-            addEmployee({...formData, id: Date.now()})
+            addSubscriber({...formData, id: Date.now()})
             setFormData({ 
                 first_name: "", 
                 last_name: "", 

@@ -43,6 +43,7 @@ class App extends React.Component {
       <div className='App'>
         <BrowserRouter>
           <Header></Header>
+          <Sidebar></Sidebar>
           <Routes>
             <Route path='/subscribers' element={<SubscriberTable subscriberList={this.state.subscriberList} deleteSubscriber={this.deleteSubscriber}></SubscriberTable>}></Route>
             <Route path='/add-new-subscriber' element={<AddSubscriber addSubscriber={this.addSubscriber}></AddSubscriber>}></Route>
