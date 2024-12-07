@@ -74,3 +74,35 @@ thead {
   font-weight: bold;
   text-decoration: underline;
 }
+
+.error-image {
+  width: 500px;
+  border: 5px solid black;
+}
+
+.error-page {
+  background-color: beige;
+}
+
+form {
+  background-color: beige;
+}
+
+.main-content h1 {
+  text-decoration: underline;
+}
+
+.main-content button {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+}

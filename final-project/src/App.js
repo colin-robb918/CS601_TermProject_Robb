@@ -50,7 +50,7 @@ class App extends React.Component {
             <Route path='/add-new-subscriber' element={<AddSubscriber addSubscriber={this.addSubscriber}></AddSubscriber>}></Route>
             <Route path='/edit/:id' element={<EditSubscriber subscriberList={this.state.subscriberList} updateSubscriber={this.updateSubscriber}></EditSubscriber>}></Route>
             <Route path='/about.html' element={<h1>About Me</h1>}/>
-            <Route path='*' element={<NotFound />}></Route>
+            <Route path='*' element={<NotFound></NotFound>}></Route>
           </Routes>
           <Footer></Footer>
         </BrowserRouter>

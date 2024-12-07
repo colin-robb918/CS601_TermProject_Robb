@@ -8,6 +8,7 @@ export default function SubscriberTable(props) {
 
     return (
         <div className="main-content">
+            <h1>Subscriber Table</h1>
             <table>
                 <thead>
                     <tr>
@@ -20,7 +21,6 @@ export default function SubscriberTable(props) {
                     </tr>
                 </thead>
                 <tbody>
-                    {/*List rendering */}
                     {props.subscriberList.map(subscriber => (
                         <tr key={subscriber.id}>
                             <td>{subscriber.id}</td>
