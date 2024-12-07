@@ -1,6 +1,7 @@
 import React from 'react';
+import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AddSubscriber, EditSubscriber, Footer, Header, Sidebar, SubscriberTable } from './components';
+import { AddSubscriber, EditSubscriber, Footer, Header, NotFound, Sidebar, SubscriberTable } from './components';
 
 const api = "./models/subscribers.json";
 
@@ -49,7 +50,7 @@ class App extends React.Component {
             <Route path='/add-new-subscriber' element={<AddSubscriber addSubscriber={this.addSubscriber}></AddSubscriber>}></Route>
             <Route path='/edit/:id' element={<EditSubscriber subscriberList={this.state.subscriberList} updateSubscriber={this.updateSubscriber}></EditSubscriber>}></Route>
             <Route path='/about.html' element={<h1>About Me</h1>}/>
-            <Route path='*' element={<h1>Oops... not found!</h1>}></Route>
+            <Route path='*' element={<NotFound />}></Route>
           </Routes>
           <Footer></Footer>
         </BrowserRouter>

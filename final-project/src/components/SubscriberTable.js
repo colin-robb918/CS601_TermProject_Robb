@@ -7,7 +7,7 @@ export default function SubscriberTable(props) {
     }
 
     return (
-        <div className="subscriber-table">
+        <div className="main-content">
             <table>
                 <thead>
                     <tr>

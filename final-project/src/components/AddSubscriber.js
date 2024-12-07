@@ -59,7 +59,7 @@ export default function AddSubscriber({addSubscriber}) {
     };
 
     return (
-        <div>
+        <div className='main-content'>
             <h1>Add Subscriber</h1>
             {success ? <h2>Updated Successfully!  Redirecting...</h2>
                 :
@@ -105,7 +105,7 @@ export default function AddSubscriber({addSubscriber}) {
                     <br />
                     <input
                         type="text"
-                        name="company"
+                        name="phone_number"
                         value={formData.phone_number}
                         onChange={handleChange}
                     />

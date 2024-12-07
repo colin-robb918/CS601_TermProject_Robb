@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom';
 
 export default function Sidebar() {
     return (
-        <div>
+        <div className='sidebar'>
             <ul>
                 <li>
                     <Link to="/">Home</Link>

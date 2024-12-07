@@ -72,7 +72,7 @@ export default function EditSubscriber({ subscriberList, updateSubscriber }) {
     };
 
     return (
-        <div>
+        <div className='main-content'>
             <h1>Update Subscriber</h1>
 
             {success ? <h2>Updated Successfully!  Redirecting...</h2>
@@ -119,7 +119,7 @@ export default function EditSubscriber({ subscriberList, updateSubscriber }) {
                         <br />
                         <input
                             type="text"
-                            name="company"
+                            name="phone_number"
                             value={formData.phone_number}
                             onChange={handleChange}
                         />
