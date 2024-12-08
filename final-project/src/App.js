@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
+import { hobbies } from './models/hobbies';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AboutMe, AddSubscriber, EditSubscriber, Footer, Header, HomePage, NotFound, Origin, Sidebar, SubscriberTable } from './components';
+import { AboutMe, AddSubscriber, EditSubscriber, Footer, Header, Hobbies, HobbyDetail, HomePage, NotFound, Origin, Sidebar, SubscriberTable } from './components';
 
 const api = "./models/subscribers.json";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { subscriberList: [] }
+    this.state = { subscriberList: [], hobbyList: hobbies }
   }
 
   componentDidMount() {
@@ -53,6 +54,8 @@ class App extends React.Component {
             <Route path='/edit/:id' element={<EditSubscriber subscriberList={this.state.subscriberList} updateSubscriber={this.updateSubscriber}></EditSubscriber>} />
             <Route path='/about.html' element={<AboutMe />}/>
             <Route path='/origin.html' element={<Origin />} />
+            <Route path='/hobbies.html' element={<Hobbies hobbies={this.state.hobbyList}/>} />
+            <Route path='/hobby/:id' element={<HobbyDetail hobbies={this.state.hobbyList} />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
           <Footer />

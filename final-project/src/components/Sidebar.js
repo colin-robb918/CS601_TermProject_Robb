@@ -11,6 +11,9 @@ export default function Sidebar() {
                     <Link to='/origin.html'>Where I'm From</Link>
                 </li>
                 <li>
+                    <Link to='/hobbies.html'>My Hobbies</Link>
+                </li>
+                <li>
                     <Link to="/about.html">About Me</Link>
                 </li>
                 <li>
