@@ -55,7 +55,7 @@ class App extends React.Component {
             <Route path='/about.html' element={<AboutMe />}/>
             <Route path='/origin.html' element={<Origin />} />
             <Route path='/hobbies.html' element={<HobbyList items={hobbies}/>} />
-            <Route path='/hobby/:id' element={<HobbyDetail items={hobbies}/>} />
+            <Route path='/hobby/:SKU' element={<HobbyDetail items={hobbies}/>} />
             <Route path='*' element={<NotFound />} />
           </Routes>
           <Footer />

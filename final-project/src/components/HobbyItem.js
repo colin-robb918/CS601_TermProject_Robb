@@ -1,7 +1,7 @@
 import React from "react";
 import '../Hobbies.css';
 
-const HobbyItem = ({ SKU, name, description, image }) => {
+const HobbyItem = ({ name, description, image }) => {
     return (
         <div className="main-content">
             <div className="hobby-item">

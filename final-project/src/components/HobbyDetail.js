@@ -11,7 +11,6 @@ export default function HobbyDetail({ items }) {
         <div className="main-content">
             <h1>Hobby Details</h1>
             <div>
-                <p className="hobby-description">{hobbyToDisplay.description}</p>
                 <img src={hobbyToDisplay.detailImage} alt='hobby'></img>
                 <p>Name: {hobbyToDisplay.name}</p>
                 <p>{hobbyToDisplay.detailImageDesc}</p>
