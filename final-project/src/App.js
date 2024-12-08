@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AboutMe, AddSubscriber, EditSubscriber, Footer, Header, NotFound, Sidebar, SubscriberTable } from './components';
+import { AboutMe, AddSubscriber, EditSubscriber, Footer, Header, HomePage, NotFound, Sidebar, SubscriberTable } from './components';
 
 const api = "./models/subscribers.json";
 
@@ -43,16 +43,18 @@ class App extends React.Component {
     return (
       <div className='App'>
         <BrowserRouter>
-          <Header></Header>
-          <Sidebar></Sidebar>
+          <Header />
+          <Sidebar />
+          <HomePage />
           <Routes>
+            <Route path='/' element={<HomePage />}/>
             <Route path='/subscribers' element={<SubscriberTable subscriberList={this.state.subscriberList} deleteSubscriber={this.deleteSubscriber}></SubscriberTable>}></Route>
             <Route path='/add-new-subscriber' element={<AddSubscriber addSubscriber={this.addSubscriber}></AddSubscriber>}></Route>
             <Route path='/edit/:id' element={<EditSubscriber subscriberList={this.state.subscriberList} updateSubscriber={this.updateSubscriber}></EditSubscriber>}></Route>
             <Route path='/about.html' element={<AboutMe />}/>
-            <Route path='*' element={<NotFound></NotFound>}></Route>
+            <Route path='*' element={<NotFound />}></Route>
           </Routes>
-          <Footer></Footer>
+          <Footer />
         </BrowserRouter>
       </div>
     )
