@@ -12,7 +12,7 @@ const overlayStyle = {
 
 const Title = ({ title = "Here *" }) => (
     <div style={overlayStyle}>
-      <h1 className="title">{title}</h1>
+        <h1 className="title">{title}</h1>
     </div>
 );
 
@@ -36,12 +36,12 @@ export default class Origin extends React.Component {
     render() {
         var photoStyle = {
             background:
-              "url(../images/canada_map.jpg)",
+                "url(../images/canada_map.jpg)",
             backgroundSize: "cover",
             width: 900,
             height: 700,
             margin: 30
-          };
+        };
 
         return (
             <div className="main-content">

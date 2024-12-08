@@ -6,7 +6,7 @@ import '../Hobbies.css';
 const HobbyList = ({ items }) => {
     return (
         <div className="main-content">
-            <ul className="hobby-item"> 
+            <ul className="hobby-item">
                 {items.map(({ SKU, name, description, image }) => (
                     <li>
                         <Link to={'/hobby/' + SKU}>

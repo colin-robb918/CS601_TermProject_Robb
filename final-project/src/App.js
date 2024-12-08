@@ -9,7 +9,7 @@ const api = "./models/subscribers.json";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { subscriberList: []}
+    this.state = { subscriberList: [] }
   }
 
   componentDidMount() {
@@ -48,14 +48,14 @@ class App extends React.Component {
           <Sidebar />
           <HomePage />
           <Routes>
-            <Route path='/' element={<HomePage />}/>
+            <Route path='/' element={<HomePage />} />
             <Route path='/subscribers' element={<SubscriberTable subscriberList={this.state.subscriberList} deleteSubscriber={this.deleteSubscriber}></SubscriberTable>} />
             <Route path='/add-new-subscriber' element={<AddSubscriber addSubscriber={this.addSubscriber}></AddSubscriber>} />
             <Route path='/edit/:id' element={<EditSubscriber subscriberList={this.state.subscriberList} updateSubscriber={this.updateSubscriber}></EditSubscriber>} />
-            <Route path='/about.html' element={<AboutMe />}/>
+            <Route path='/about.html' element={<AboutMe />} />
             <Route path='/origin.html' element={<Origin />} />
-            <Route path='/hobbies.html' element={<HobbyList items={hobbies}/>} />
-            <Route path='/hobby/:SKU' element={<HobbyDetail items={hobbies}/>} />
+            <Route path='/hobbies.html' element={<HobbyList items={hobbies} />} />
+            <Route path='/hobby/:SKU' element={<HobbyDetail items={hobbies} />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
           <Footer />

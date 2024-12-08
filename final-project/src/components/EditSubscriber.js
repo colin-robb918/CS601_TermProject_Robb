@@ -39,10 +39,10 @@ export default function EditSubscriber({ subscriberList, updateSubscriber }) {
     const validate = () => {
         const newErrors = {};
 
-        if(!formData.first_name.trim()) newErrors.first_name = "First name is required";
-        if(!formData.last_name.trim()) newErrors.last_name = "Last name is required";
-        if(!formData.email.trim()) newErrors.email = "Email is required";
-        if(!formData.phone_number.trim()) newErrors.phone_number = "Phone Number is required";
+        if (!formData.first_name.trim()) newErrors.first_name = "First name is required";
+        if (!formData.last_name.trim()) newErrors.last_name = "Last name is required";
+        if (!formData.email.trim()) newErrors.email = "Email is required";
+        if (!formData.phone_number.trim()) newErrors.phone_number = "Phone Number is required";
 
         // set errrors
         setErrors(newErrors);

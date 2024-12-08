@@ -4,11 +4,11 @@
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto 1fr auto;
   gap: 10px;
-  grid-template-areas: 
+  grid-template-areas:
     "header header"
     "main-content sidebar"
     "footer footer"
-    ;
+  ;
 }
 
 .header {
@@ -30,19 +30,20 @@
   background-color: darkred;
 }
 
-@media (max-width: 1000px){
-  .App {       
-      grid-template-areas:
-      "header" 
+@media (max-width: 1000px) {
+  .App {
+    grid-template-areas:
+      "header"
       "main-content"
       "sidebar"
       "footer";
   }
 }
 
-.header, .footer {
+.header,
+.footer {
   background-color: black;
-  color:beige
+  color: beige
 }
 
 .sidebar ul {
@@ -65,14 +66,14 @@
   color: black;
 }
 
-.sidebar ul li a:hover{
+.sidebar ul li a:hover {
   background-color: white;
   color: blue;
   font-weight: bold;
   border: 3px solid;
 }
 
-table { 
+table {
   margin: auto;
   border: 5px solid black;
   border-radius: 5px;
