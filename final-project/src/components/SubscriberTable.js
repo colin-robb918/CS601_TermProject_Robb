@@ -29,8 +29,8 @@ export default function SubscriberTable(props) {
                             <td>{subscriber.email}</td>
                             <td>{subscriber.phone_number}</td>
                             <td>
-                              <Link to={'/edit/' + subscriber.id}><button>Edit</button></Link>
-                                <button onClick={ ()=> handleClick(subscriber.id) }>Delete</button>
+                                <Link to={'/edit/' + subscriber.id}><button>Edit</button></Link>
+                                <button onClick={() => handleClick(subscriber.id)}>Delete</button>
                             </td>
                         </tr>
                     ))}

@@ -6,3 +6,4 @@ export {default as EditSubscriber} from './EditSubscriber';
 export {default as Footer} from './Footer';
 export {default as Sidebar} from './Sidebar';
 export {default as NotFound} from './NotFound';
+export {default as AboutMe} from './AboutMe';
