@@ -102,7 +102,7 @@ form {
   text-decoration: underline;
 }
 
-.main-content button {
+.subscriber-button {
   background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
   border: 0;
   border-radius: 12px;

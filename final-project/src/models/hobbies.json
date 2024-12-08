@@ -11,7 +11,7 @@
         "SKU":2,
         "name":"Golden Retrievers",
         "description":"Every Man's Best Friend",
-        "image":"../images/golden_retrievers_cartoon.jpg",
+        "image":"../images/golden_retriever_cartoon.jpg",
         "detailImage":"../images/golden_retrievers_real.jpeg",
         "detailImageDesc":"Our two golden retrievers, Brady and Mac (yes, named after the New England Patriots quarterbacks). Mac is about to be 3, and Brady is just turning 4 this January."
     },
@@ -26,7 +26,7 @@
     {
         "SKU":4,
         "name":"Movie Time",
-        "description":"Nothing Quite Like a Good Action Flick",
+        "description":"Nothing Like a Good Action Flick",
         "image":"../images/Movie_cartoon.jpg",
         "detailImage":"../images/die_hard.jpg",
         "detailImageDesc":"Yes, it is a Christmas movie. Get over it."
