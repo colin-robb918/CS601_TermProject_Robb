@@ -8,6 +8,9 @@ export default function Sidebar() {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
+                    <Link to='/origin.html'>Where I'm From</Link>
+                </li>
+                <li>
                     <Link to="/about.html">About Me</Link>
                 </li>
                 <li>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AboutMe, AddSubscriber, EditSubscriber, Footer, Header, HomePage, NotFound, Sidebar, SubscriberTable } from './components';
+import { AboutMe, AddSubscriber, EditSubscriber, Footer, Header, HomePage, NotFound, Origin, Sidebar, SubscriberTable } from './components';
 
 const api = "./models/subscribers.json";
 
@@ -48,11 +48,12 @@ class App extends React.Component {
           <HomePage />
           <Routes>
             <Route path='/' element={<HomePage />}/>
-            <Route path='/subscribers' element={<SubscriberTable subscriberList={this.state.subscriberList} deleteSubscriber={this.deleteSubscriber}></SubscriberTable>}></Route>
-            <Route path='/add-new-subscriber' element={<AddSubscriber addSubscriber={this.addSubscriber}></AddSubscriber>}></Route>
-            <Route path='/edit/:id' element={<EditSubscriber subscriberList={this.state.subscriberList} updateSubscriber={this.updateSubscriber}></EditSubscriber>}></Route>
+            <Route path='/subscribers' element={<SubscriberTable subscriberList={this.state.subscriberList} deleteSubscriber={this.deleteSubscriber}></SubscriberTable>} />
+            <Route path='/add-new-subscriber' element={<AddSubscriber addSubscriber={this.addSubscriber}></AddSubscriber>} />
+            <Route path='/edit/:id' element={<EditSubscriber subscriberList={this.state.subscriberList} updateSubscriber={this.updateSubscriber}></EditSubscriber>} />
             <Route path='/about.html' element={<AboutMe />}/>
-            <Route path='*' element={<NotFound />}></Route>
+            <Route path='/origin.html' element={<Origin />} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
           <Footer />
         </BrowserRouter>
