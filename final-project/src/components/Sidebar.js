@@ -8,13 +8,13 @@ export default function Sidebar() {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
+                    <Link to="/about.html">About Me</Link>
+                </li>
+                <li>
                     <Link to="/subscribers">Subscriber List</Link>
                 </li>
                 <li>
                     <Link to="/add-new-subscriber">Add New Subscriber</Link>
-                </li>
-                <li>
-                    <Link to="/about.html">About Me</Link>
                 </li>
             </ul>
         </div>

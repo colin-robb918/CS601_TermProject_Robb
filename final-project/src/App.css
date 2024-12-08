@@ -30,6 +30,16 @@
   background-color: darkred;
 }
 
+@media (max-width: 1000px){
+  .App {       
+      grid-template-areas:
+      "header" 
+      "main-content"
+      "sidebar"
+      "footer";
+  }
+}
+
 .header, .footer {
   background-color: black;
   color:beige
@@ -43,7 +53,7 @@
   display: inline-block;
   border: 1px solid;
   background-color: darkgoldenrod;
-  margin: 5px;
+  margin: 10px;
   width: 200px;
 }
 
