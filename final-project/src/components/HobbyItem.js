@@ -1,10 +1,12 @@
 import React from "react";
 
-const HobbyItem = ({ name, description }) => {
+const HobbyItem = ({ SKU, name, description, image }) => {
     return (
-        <div className="hobby-item">
+        <div className="main-content">
+            <img src={image} alt='hobby item' />
+            <p>id: { SKU }</p>
             <p>Name: { name }</p>
-            <p>{ description }</p>
+            <p>Description: { description }</p>
         </div>
     )
 }

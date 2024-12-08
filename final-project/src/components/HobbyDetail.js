@@ -1,11 +1,11 @@
 import React from "react";
 import { useParams } from 'react-router-dom';
 
-export default function HobbyDetail({ hobbies }) {
-    let {id} = useParams();
-    id = parseInt(id);
+export default function HobbyDetail({ items }) {
+    let { SKU } = useParams();
+    SKU = parseInt(SKU);
 
-    const hobbyToDisplay = hobbies.find(h => h.id === id);
+    const hobbyToDisplay = items.find(h => h.SKU === SKU);
 
     return (
         <div className="main-content">
